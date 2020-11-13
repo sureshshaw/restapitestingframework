@@ -1,0 +1,26 @@
+baseUrl: "http://rdv-005096:18080/ocintegration/workflow/deficiencyservice"
+testCases:
+  - endPoint: /getDictationDocTypes/{facility}
+    methodType: GET
+    pathParams:
+      facility: "A"
+            
+  - endPoint: /deficiencyDocInfo
+    methodType: GET
+    queryParams: 
+      duid: "1.2.840.113782.1.3.123.1038.9.20180109.48444956"
+                    
+  - endPoint: /docLocking
+    methodType: GET   
+        
+  - endPoint: /getDictationJobIds/{encounter}
+    methodType: GET
+    pathParams: 
+      encounter: "7777071253"
+      
+  - endPoint: /
+    methodType: POST
+    requestBody: '{"defType":1,"docTypeId":" ","duid":"1.2.840.113782.1.3.123.1038.9.20180109.48444956                 ","folder":"7777071253","facility":"A","signPage":1,"reason":"","priority":"N","physician":"DB2","fileType":"HL7","startPage":null,"rectSignature":{"x":0,"y":0,"w":0,"h":0}}'   
+    queryParams:
+      facility: "A"  
+      

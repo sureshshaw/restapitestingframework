@@ -1,0 +1,11 @@
+loginBaseUrl: http://emivalid1902:18080/ocintegration/securityservice/login
+authorization: 'admin:1234:::'
+tenantID: mpf
+contentType: application/json
+dbURL: jdbc:jtds:sqlserver://RDV-006231/cabinet
+dbUser: sa
+dbPwd: qc
+files:
+  - DeficiencyServices.yaml
+  - PhysicianQueryServices.yaml
+  - TaskListServices.yaml

@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>OneContent Integration Test Report</title>
+<link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico' />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.3.1/js/dataTables.fixedColumns.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+<script type="text/javascript" src="data/datafile.js"></script>
+<script src="data/Chart.min.js"></script>
+<script type="text/javascript" src="data/Chart.PieceLabel.js"></script>
+<script type="text/javascript" src="data/report.js"></script>
+<script type="text/javascript" src="data/sortable.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.3.1/css/fixedColumns.dataTables.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="data/report.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="startReport()">
+	<div id="mainReport" class="col-lg-12" style="width: 100%; margin-top: 1%">
+		<div id="chartDiv" class="col-lg-12">
+			<div class="rep_sho">
+				<table id="main_table" style="background-color: whitel; margin-left: 1.3%; width: 97.3%;">
+					<tr>
+						<td colspan="3"><img style="float: left; width: 17%; height: 80%;" src="../img/logo.png" alt="logo" />
+							<div id="AplicationDetails">
+								<label style="color: black; font-size: 200%;">OneContent API Test Execution Report</label>
+							</div>
+						</td>
+						<td style="padding-left: 10%;">Auto Refresh
+							<input type="checkbox" id="myCheck" checked onclick="autoRefresh()"> </td>
+					</tr>
+					<tr>
+					
+						<td width="20%">
+							<div style="position: relative; top: 0; left: 30%; font-weight: bold;">Total Test Result</div>
+							<div id="canvas-holder" style="" onload="status()">
+								<canvas id="test-status" height="220"></canvas>
+							</div>
+						</td>
+						
+						<td width="20%">
+							<div style="position: relative; top: 0; left: 30%; font-weight: bold;">Type of Exceptions</div>
+							<div id="canvas-holder" style="" onload="status()">
+								<canvas id="fail-result" height="220"></canvas>
+							</div>
+						</td>
+						
+						<td>
+							<div id="canHolder" style="width: 100%">
+								<canvas id="myChart"> </canvas>
+							</div>
+							<!-- <div style="text-align: center">
+								<button id="back" type="button" onclick="pagintion('')" disabled>&laquo;</button>
+								<input type="button" id="size" disabled></input>
+								<button id="front" type="button" onclick="pagintion('next')">&raquo;</button>
+							</div> -->
+						</td>
+						
+						<td width="20%" style="font-weight: bolder;">
+							<div id="status" style="width: 200px; margin: auto;">
+								<table id="TimeTable" style="border: none; margin-bottom: 20px">
+								
+									<tr>
+										<th colspan="2" width="1%" style="text-align: center">Test VM Name</th>
+									</tr>
+									<tr>
+										<td colspan="2" style="text-align: center; background-color: #87cefa" width="10px">
+											<span id="testVMName" style="font-size: 17px; font-family:times; font-weight: bold;"></span>
+										</td>
+									</tr>
+									
+									<tr>
+										<th colspan="2" width="1%" style="text-align: center">Report Generation Date</th>
+									</tr>
+									<tr>
+										<td colspan="2" style="text-align: center; background-color: #87cefa" width="10px">
+											<span id="executionStartDateTime" style="font-size: 17px; font-family:times; font-weight: bold"></span>
+										</td>
+									</tr>
+									
+									<tr>
+										<th colspan="2" width="1%" style="text-align: center">Total Test Time</th>
+									</tr>
+									<tr>
+										<td colspan="2" style="text-align: center; background-color: #87cefa">
+											<span id="time" style="font-size: 17px; font-family:times; font-weight: bold"></span> 
+										</td>
+									</tr>
+									
+								</table>
+								<table id="statusTable" style="border: 1px solid black; margin-top: -3%;" width="60%">
+									<tr>
+										<th colspan="2" style="border: 1px solid black">Test Result</th>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="tableDiv" class="col-lg-12" style="margin-top: 1%; margin-left: 1%; width: 97.6%;">
+			<table id="MainTable" class="display nowrap">
+				<thead>
+					<tr>
+						<th>Sl No.</th>
+						<th>File Name</th>
+						<th>End Points</th>
+						<th>Request Type</th>
+						<th>Query Parameters</th>
+						<th>Path Parameters</th>
+						<th>DB Query</th>
+						<th>Time(in sec)</th>
+						<th>Result</th>
+						<th id="exp">Reasons</th>
+					</tr>
+				</thead>
+				<tbody id="BodyRows"></tbody>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>

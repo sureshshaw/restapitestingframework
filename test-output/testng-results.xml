@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2489" started-at="2020-08-08T06:06:49Z" finished-at="2020-08-08T06:06:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2489" started-at="2020-08-08T06:06:49Z" finished-at="2020-08-08T06:06:51Z">
+      <class name="com.hyland.IT.tests.IntegrationTest">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@57d0fc89]" name="beforeTest" is-config="true" duration-ms="5" started-at="2020-08-08T11:36:49Z" finished-at="2020-08-08T11:36:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=SUCCESS method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@57d0fc89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@57d0fc89]" name="PASSED --&gt; File Name : DeficiencyServices.yaml; End Point : GET::/deficiencyDocInfo [Query Params: {duid=1.2.840.113782.1.3.123.1038.9.20180109.48444956},  Path Params: null, DB Query: ]" duration-ms="2016" started-at="2020-08-08T11:36:49Z" finished-at="2020-08-08T11:36:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PASSED -> File Name : DeficiencyServices.yaml; End Point : GET::/deficiencyDocInfo [Query Params: {duid=1.2.840.113782.1.3.123.1038.9.20180109.48444956},  Path Params: null, DB Query: ] -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@57d0fc89]" name="setResultTestName" is-config="true" duration-ms="1" started-at="2020-08-08T11:36:51Z" finished-at="2020-08-08T11:36:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=SUCCESS method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@57d0fc89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+      </class> <!-- com.hyland.IT.tests.IntegrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

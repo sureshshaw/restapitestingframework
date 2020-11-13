@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="14" total="14" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="30482" started-at="2020-09-11T09:37:27Z" finished-at="2020-09-11T09:37:57Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="30482" started-at="2020-09-11T09:37:27Z" finished-at="2020-09-11T09:37:57Z">
+      <class name="com.hyland.IT.tests.IntegrationTest">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="16" started-at="2020-09-11T15:07:27Z" finished-at="2020-09-11T15:07:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@127f9161] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@127f9161]" name="FAILED --&gt; File Name : PhysicianQueryServices.yaml; End Point : POST::/ [Query Params: {facility=A},  Path Params: null, DB Query: ]" duration-ms="4549" started-at="2020-09-11T15:07:27Z" finished-at="2020-09-11T15:07:32Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : PhysicianQueryServices.yaml; End Point : POST::/ [Query Params: {facility=A},  Path Params: null, DB Query: ] -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="2" started-at="2020-09-11T15:07:32Z" finished-at="2020-09-11T15:07:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@127f9161] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:32Z" finished-at="2020-09-11T15:07:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@1ba05e38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@1ba05e38]" name="FAILED --&gt; File Name : DeficiencyServices.yaml; End Point : GET::/deficiencyDocInfo [Query Params: {duid=1.2.840.113782.1.3.123.1038.9.20180109.48444956},  Path Params: null, DB Query: ]" duration-ms="1937" started-at="2020-09-11T15:07:32Z" finished-at="2020-09-11T15:07:34Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : DeficiencyServices.yaml; End Point : GET::/deficiencyDocInfo [Query Params: {duid=1.2.840.113782.1.3.123.1038.9.20180109.48444956},  Path Params: null, DB Query: ] -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@2532b351]" name="FAILED --&gt; File Name : PhysicianQueryServices.yaml; End Point : GET::/getDictationJobIds/{encounter} [Query Params: null,  Path Params: {encounter=7777071253}, DB Query: ]" duration-ms="1948" started-at="2020-09-11T15:07:34Z" finished-at="2020-09-11T15:07:36Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : PhysicianQueryServices.yaml; End Point : GET::/getDictationJobIds/{encounter} [Query Params: null,  Path Params: {encounter=7777071253}, DB Query: ] -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:34Z" finished-at="2020-09-11T15:07:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@1ba05e38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:34Z" finished-at="2020-09-11T15:07:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@2532b351] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:36Z" finished-at="2020-09-11T15:07:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@2532b351] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@2bf94401]" name="FAILED --&gt; File Name : PhysicianQueryServices.yaml; End Point : GET::/deficiencyDocInfo [Query Params: {duid=1.2.840.113782.1.3.123.1038.9.20180109.48444956},  Path Params: null, DB Query: ]" duration-ms="1938" started-at="2020-09-11T15:07:36Z" finished-at="2020-09-11T15:07:38Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : PhysicianQueryServices.yaml; End Point : GET::/deficiencyDocInfo [Query Params: {duid=1.2.840.113782.1.3.123.1038.9.20180109.48444956},  Path Params: null, DB Query: ] -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:36Z" finished-at="2020-09-11T15:07:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@2bf94401] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:38Z" finished-at="2020-09-11T15:07:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@2bf94401] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:38Z" finished-at="2020-09-11T15:07:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@3b0ee03a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@3b0ee03a]" name="FAILED --&gt; File Name : DeficiencyServices.yaml; End Point : POST::/ [Query Params: {facility=A},  Path Params: null, DB Query: ]" duration-ms="1929" started-at="2020-09-11T15:07:38Z" finished-at="2020-09-11T15:07:40Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : DeficiencyServices.yaml; End Point : POST::/ [Query Params: {facility=A},  Path Params: null, DB Query: ] -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@3e7dfd44]" name="FAILED --&gt; File Name : DeficiencyServices.yaml; End Point : GET::/docLocking [Query Params: null,  Path Params: null, DB Query: ]" duration-ms="1929" started-at="2020-09-11T15:07:40Z" finished-at="2020-09-11T15:07:42Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : DeficiencyServices.yaml; End Point : GET::/docLocking [Query Params: null,  Path Params: null, DB Query: ] -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:40Z" finished-at="2020-09-11T15:07:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@3e7dfd44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:40Z" finished-at="2020-09-11T15:07:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@3b0ee03a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:42Z" finished-at="2020-09-11T15:07:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@3e7dfd44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@4349754]" name="FAILED --&gt; File Name : PhysicianQueryServices.yaml; End Point : GET::/docLocking [Query Params: null,  Path Params: null, DB Query: ]" duration-ms="1924" started-at="2020-09-11T15:07:42Z" finished-at="2020-09-11T15:07:44Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : PhysicianQueryServices.yaml; End Point : GET::/docLocking [Query Params: null,  Path Params: null, DB Query: ] -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:42Z" finished-at="2020-09-11T15:07:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@4349754] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:44Z" finished-at="2020-09-11T15:07:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@4349754] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:44Z" finished-at="2020-09-11T15:07:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@65fd6708] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@65fd6708]" name="FAILED --&gt; File Name : TaskListServices.yaml; End Point : GET::/encounter [Query Params: {taskGroup=Deficiency, encounter=7777071253, facility=A},  Path Params: null, DB Query: ]" duration-ms="1937" started-at="2020-09-11T15:07:44Z" finished-at="2020-09-11T15:07:46Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : TaskListServices.yaml; End Point : GET::/encounter [Query Params: {taskGroup=Deficiency, encounter=7777071253, facility=A},  Path Params: null, DB Query: ] -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:46Z" finished-at="2020-09-11T15:07:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6a2eea2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:46Z" finished-at="2020-09-11T15:07:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@65fd6708] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6a2eea2a]" name="FAILED --&gt; File Name : PhysicianQueryServices.yaml; End Point : GET::/getDictationDocTypes/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ]" duration-ms="1940" started-at="2020-09-11T15:07:46Z" finished-at="2020-09-11T15:07:48Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : PhysicianQueryServices.yaml; End Point : GET::/getDictationDocTypes/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ] -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:48Z" finished-at="2020-09-11T15:07:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6a2eea2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:48Z" finished-at="2020-09-11T15:07:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="FAILED --&gt; File Name : DeficiencyServices.yaml; End Point : GET::/getDocTypesForDefType/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ]" duration-ms="1922" started-at="2020-09-11T15:07:48Z" finished-at="2020-09-11T15:07:50Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : DeficiencyServices.yaml; End Point : GET::/getDocTypesForDefType/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ] -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:50Z" finished-at="2020-09-11T15:07:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:50Z" finished-at="2020-09-11T15:07:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6c298dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6c298dc]" name="FAILED --&gt; File Name : DeficiencyServices.yaml; End Point : GET::/getDictationJobIds/{encounter} [Query Params: null,  Path Params: {encounter=7777071253}, DB Query: ]" duration-ms="1933" started-at="2020-09-11T15:07:50Z" finished-at="2020-09-11T15:07:52Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : DeficiencyServices.yaml; End Point : GET::/getDictationJobIds/{encounter} [Query Params: null,  Path Params: {encounter=7777071253}, DB Query: ] -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:52Z" finished-at="2020-09-11T15:07:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@723ed581] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@723ed581]" name="FAILED --&gt; File Name : DeficiencyServices.yaml; End Point : GET::/getDictationDocTypes/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ]" duration-ms="1927" started-at="2020-09-11T15:07:52Z" finished-at="2020-09-11T15:07:54Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : DeficiencyServices.yaml; End Point : GET::/getDictationDocTypes/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ] -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:52Z" finished-at="2020-09-11T15:07:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6c298dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-09-11T15:07:54Z" finished-at="2020-09-11T15:07:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@749ab7b4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:54Z" finished-at="2020-09-11T15:07:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@723ed581] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@749ab7b4]" name="FAILED --&gt; File Name : TaskListServices.yaml; End Point : GET::/tasklist [Query Params: {taskGroup=Deficiency},  Path Params: null, DB Query: ]" duration-ms="1918" started-at="2020-09-11T15:07:54Z" finished-at="2020-09-11T15:07:56Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : TaskListServices.yaml; End Point : GET::/tasklist [Query Params: {taskGroup=Deficiency},  Path Params: null, DB Query: ] -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:56Z" finished-at="2020-09-11T15:07:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@749ab7b4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+        <test-method status="FAIL" signature="restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@b967222]" name="FAILED --&gt; File Name : PhysicianQueryServices.yaml; End Point : GET::/getDocTypesForDefType/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ]" duration-ms="1940" started-at="2020-09-11T15:07:56Z" finished-at="2020-09-11T15:07:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.setResultTestName(IntegrationTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FAILED -> File Name : PhysicianQueryServices.yaml; End Point : GET::/getDocTypesForDefType/{facility} [Query Params: null,  Path Params: {facility=A}, DB Query: ] -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:56Z" finished-at="2020-09-11T15:07:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@b967222] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setResultTestName(org.testng.ITestResult)[pri:0, instance:com.hyland.IT.tests.IntegrationTest@6b760460]" name="setResultTestName" is-config="true" duration-ms="0" started-at="2020-09-11T15:07:57Z" finished-at="2020-09-11T15:07:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=restAPITest status=FAILURE method=IntegrationTest.restAPITest()[pri:0, instance:com.hyland.IT.tests.IntegrationTest@b967222] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultTestName -->
+      </class> <!-- com.hyland.IT.tests.IntegrationTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

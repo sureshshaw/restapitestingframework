@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "reason": {
+      "type": "string"
+    },
+    "docTypeId": {
+      "type": "integer"
+    },
+    "duid": {
+      "type": "string"
+    },
+    "fileType": {
+      "type": "string"
+    },
+    "textEditing": {
+      "type": "string"
+    },
+    "calctableId": {
+      "type": "integer"
+    },
+    "boxWidth": {
+      "type": "integer"
+    },
+    "boxHeight": {
+      "type": "integer"
+    },
+    "xCoord": {
+      "type": "integer"
+    },
+    "sigRequired": {
+      "type": "boolean"
+    },
+    "docTypeName": {
+      "type": "string"
+    },
+    "yCoord": {
+      "type": "integer"
+    },
+    "mtAgingBasis": {
+      "type": "string"
+    },
+    "ackAgingBasis": {
+      "type": "null"
+    },
+    "sigAgingBasis": {
+      "type": "string"
+    },
+    "ackW": {
+      "type": "integer"
+    },
+    "ackY": {
+      "type": "integer"
+    },
+    "ackX": {
+      "type": "integer"
+    },
+    "ackPage": {
+      "type": "null"
+    },
+    "sigQueue": {
+      "type": "string"
+    },
+    "ackH": {
+      "type": "integer"
+    },
+    "dictAgingBasis": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "reason",
+    "docTypeId",
+    "duid",
+    "fileType",
+    "textEditing",
+    "calctableId",
+    "boxWidth",
+    "boxHeight",
+    "xCoord",
+    "sigRequired",
+    "docTypeName",
+    "yCoord",
+    "mtAgingBasis",
+    "ackAgingBasis",
+    "sigAgingBasis",
+    "ackW",
+    "ackY",
+    "ackX",
+    "ackPage",
+    "sigQueue",
+    "ackH",
+    "dictAgingBasis"
+  ]
+}

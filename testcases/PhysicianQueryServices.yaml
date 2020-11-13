@@ -1,0 +1,76 @@
+baseUrl: http://rdv-006231:18080/ocintegration/workflow/deficiencyservice
+testCases:        
+  - endPoint: /
+    methodType: POST
+    requestBody: '{"defType":1,"docTypeId":" ","duid":"1.2.840.113782.1.3.123.1038.9.20180109.48444956                 ","folder":"7777071253","facility":"A","signPage":1,"reason":"","priority":"N","physician":"DB2","fileType":"HL7","startPage":null,"rectSignature":{"x":0,"y":0,"w":0,"h":0}}'   
+    queryParams:
+      facility: A
+    expectedResult:
+      statusCode: 200
+      responseHeaders:
+        Server: OneContent
+        Content-Type: application/json
+      responseBody: 
+        signaturesList[0].page: 1
+        physician: DB3
+      dbValidation:
+        query: 'SELECT queue from cabinet.dbo.follow_up where id = ?'
+        arguments:
+          - gpath: id
+        expectedColumnValues:
+          queue: DB3
+        
+  - endPoint: /deficiencyDocInfo
+    methodType: GET
+    queryParams: 
+      duid: "1.2.840.113782.1.3.123.1038.9.20180109.48444956"      
+    expectedResult:
+      statusCode: 200
+      responseHeaders:
+        Server: OneContent1
+        Content-Type: application/json
+      responseBody: 
+        fileType: HL8
+        docTypeName: OB1
+        
+  - endPoint: /getDictationJobIds/{encounter}
+    methodType: GET
+    pathParams: 
+      encounter: 7777071253
+    expectedResult:
+      statusCode: 201
+      responseHeaders:
+        Server: OneContent
+        Content-Type: application/json 
+        
+  - endPoint: /docLocking
+    methodType: GET      
+    expectedResult:
+      statusCode: 201
+      responseHeaders:
+        Server: OneContent
+        Content-Type: application/json  
+        
+  - endPoint: /getDictationDocTypes/{facility}
+    methodType: GET
+    pathParams:
+      facility: A
+    expectedResult:
+      statusCode: 200
+      responseHeaders:
+        Server: OneContent
+        Content-Type: application/json
+      responseBody: 
+        find{it.documentTypeId==3729}.documentCode: TIF101
+        
+  - endPoint: /getDocTypesForDefType/{facility}
+    methodType: GET
+    pathParams:
+      facility: A
+    expectedResult:
+      statusCode: 200
+      responseHeaders:
+        Server: OneContent
+        Content-Type: application/json
+      responseBody: 
+        find{it.documentTypeId==260}.documentCode: 112DV      

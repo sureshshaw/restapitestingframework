@@ -1,0 +1,29 @@
+baseUrl: http://rdv-006231:18080/ocintegration/workflow/tasklistservice
+testCases:
+  - endPoint: /encounter
+    methodType: GET
+    queryParams:
+      taskGroup: Deficiency
+      encounter: 7777071253
+      facility: A
+    expectedResult:
+      responseTime: 30
+      statusCode: 200
+      responseJsonSchemaFileName: TaskList_GET_encounter.json
+      responseHeaders:
+        Server: OneContent
+        Content-Type: application/json
+      responseBody:  
+        tasks[0].domainValues.find{it.key=='facilityName'}.value: Facility A
+        
+  - endPoint: /tasklist
+    methodType: GET
+    queryParams:
+      taskGroup: Deficiency
+    expectedResult:
+      statusCode: 200
+      responseHeaders:
+        Server: OneContent
+        Content-Type: application/json
+      responseBody:  
+        tasks[0].domainValues.find{it.key=='facilityCode'}.value: MG        

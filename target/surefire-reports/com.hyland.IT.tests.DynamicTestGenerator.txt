@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.hyland.IT.tests.DynamicTestGenerator
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 39.304 s <<< FAILURE! - in com.hyland.IT.tests.DynamicTestGenerator
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 5.242 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:167)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.939 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.95 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.942 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.932 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:167)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.931 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.935 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.948 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.945 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.927 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.94 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.931 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.922 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+
+restAPITest(com.hyland.IT.tests.IntegrationTest)  Time elapsed: 1.943 s  <<< FAILURE!
+java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+

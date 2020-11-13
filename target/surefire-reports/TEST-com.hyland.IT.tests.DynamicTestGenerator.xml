@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hyland.IT.tests.DynamicTestGenerator" time="39.304" tests="14" errors="0" skipped="0" failures="14">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes;C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\classes;C:\Users\sshaw\.m2\repository\net\sourceforge\jtds\jtds\1.3.1\jtds-1.3.1.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\sshaw\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\sshaw\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\sshaw\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\sshaw\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\sshaw\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sshaw\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\sshaw\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\sshaw\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\sshaw\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\sshaw\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\sshaw\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\sshaw\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\sshaw\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\sshaw\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\sshaw\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\sshaw\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\json-schema-validator\4.3.1\json-schema-validator-4.3.1.jar;C:\Users\sshaw\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\sshaw\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\sshaw\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\sshaw\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\sshaw\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\sshaw\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\sshaw\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\sshaw\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\sshaw\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\sshaw\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\sshaw\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\sshaw\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\sshaw\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\sshaw\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\sshaw\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\sshaw\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.11.1\jackson-dataformat-yaml-2.11.1.jar;C:\Users\sshaw\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.1\jackson-core-2.11.1.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.1\jackson-databind-2.11.1.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.1\jackson-annotations-2.11.1.jar;C:\Users\sshaw\.m2\repository\org\webjars\bower\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\sshaw\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\sshaw\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\sshaw\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\sshaw\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\sshaw\AppData\Local\Temp\surefire5384860683286651334\surefirebooter8297480553387475848.jar C:\Users\sshaw\AppData\Local\Temp\surefire5384860683286651334 2020-09-11T15-07-17_743-jvmRun1 surefire3647402769986907507tmp surefire_02840905525651786759tmp"/>
+    <property name="surefire.test.class.path" value="C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes;C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\classes;C:\Users\sshaw\.m2\repository\net\sourceforge\jtds\jtds\1.3.1\jtds-1.3.1.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\sshaw\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\sshaw\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\sshaw\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\sshaw\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\sshaw\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sshaw\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\sshaw\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\sshaw\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\sshaw\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\sshaw\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\sshaw\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\sshaw\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\sshaw\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\sshaw\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\sshaw\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\sshaw\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\sshaw\.m2\repository\io\rest-assured\json-schema-validator\4.3.1\json-schema-validator-4.3.1.jar;C:\Users\sshaw\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\sshaw\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\sshaw\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\sshaw\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\sshaw\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\sshaw\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\sshaw\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\sshaw\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\sshaw\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\sshaw\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\sshaw\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\sshaw\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\sshaw\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\sshaw\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\sshaw\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\sshaw\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.11.1\jackson-dataformat-yaml-2.11.1.jar;C:\Users\sshaw\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.1\jackson-core-2.11.1.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.1\jackson-databind-2.11.1.jar;C:\Users\sshaw\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.1\jackson-annotations-2.11.1.jar;C:\Users\sshaw\.m2\repository\org\webjars\bower\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\sshaw\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\sshaw\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\sshaw\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\sshaw\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sshaw"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Progra~1\Java\jdk1.8.0_221\jre"/>
+    <property name="basedir" value="C:\OneContentAPITest\RestAPITestFramework\restapitestframework"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\sshaw\AppData\Local\Temp\surefire5384860683286651334\surefirebooter8297480553387475848.jar"/>
+    <property name="sun.boot.class.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="user.name" value="sshaw"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sshaw\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sshaw\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="user.dir" value="C:\OneContentAPITest\RestAPITestFramework\restapitestframework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Windows\CCM;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:\apache-maven-3.6.3\bin;C:\python\Scripts\;C:\python\;C:\Users\sshaw\AppData\Local\Microsoft\WindowsApps;;C:\Users\sshaw\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sshaw\AppData\Roaming\npm;C:\Users\sshaw\AppData\Local\Programs\Fiddler;C:\Users\sshaw\Desktop\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="5.242">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:167)
+</failure>
+    <system-out><![CDATA[2020-09-11 15:07:19,874 main DEBUG Apache Log4j Core 2.13.3 initializing configuration XmlConfiguration[location=C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml]
+2020-09-11 15:07:19,883 main DEBUG Installed 1 script engine
+2020-09-11 15:07:20,143 main DEBUG Oracle Nashorn version: 1.8.0_221, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+2020-09-11 15:07:20,144 main DEBUG PluginManager 'Core' found 122 plugins
+2020-09-11 15:07:20,144 main DEBUG PluginManager 'Level' found 0 plugins
+2020-09-11 15:07:20,148 main DEBUG PluginManager 'Lookup' found 16 plugins
+2020-09-11 15:07:20,151 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2020-09-11 15:07:20,170 main DEBUG PluginManager 'TypeConverter' found 26 plugins
+2020-09-11 15:07:20,187 main DEBUG PatternLayout$Builder(pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n", PatternSelector=null, Configuration(C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2020-09-11 15:07:20,188 main DEBUG PluginManager 'Converter' found 44 plugins
+2020-09-11 15:07:20,189 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2020-09-11 15:07:20,201 main DEBUG ConsoleAppender$Builder(target="SYSTEM_OUT", follow="null", direct="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n), name="ConsoleAppender", Configuration(C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml), Filter=null, ={})
+2020-09-11 15:07:20,204 main DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false
+2020-09-11 15:07:20,205 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2020-09-11 15:07:20,207 main DEBUG PatternLayout$Builder(pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n", PatternSelector=null, Configuration(C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2020-09-11 15:07:20,234 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.FileAppender].
+2020-09-11 15:07:20,240 main DEBUG FileAppender$Builder(fileName="application-20200911.log", append="true", locking="null", advertise="null", advertiseUri="null", createOnDemand="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="false", ignoreExceptions="null", PatternLayout(%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n), name="FileAppender", Configuration(C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml), Filter=null, ={})
+2020-09-11 15:07:20,245 main DEBUG Starting FileManager application-20200911.log
+2020-09-11 15:07:20,246 main DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2020-09-11 15:07:20,248 main DEBUG createAppenders(={ConsoleAppender, FileAppender})
+2020-09-11 15:07:20,249 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2020-09-11 15:07:20,256 main DEBUG createAppenderRef(ref="ConsoleAppender", level="null", Filter=null)
+2020-09-11 15:07:20,257 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2020-09-11 15:07:20,259 main DEBUG createAppenderRef(ref="FileAppender", level="null", Filter=null)
+2020-09-11 15:07:20,259 main DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2020-09-11 15:07:20,262 main DEBUG createLogger(additivity="null", level="DEBUG", includeLocation="null", ={ConsoleAppender, FileAppender}, ={}, Configuration(C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml), Filter=null)
+2020-09-11 15:07:20,266 main DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2020-09-11 15:07:20,267 main DEBUG createLoggers(={root})
+2020-09-11 15:07:20,268 main DEBUG Configuration XmlConfiguration[location=C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml] initialized
+2020-09-11 15:07:20,269 main DEBUG Starting configuration XmlConfiguration[location=C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml]
+2020-09-11 15:07:20,270 main DEBUG Started configuration XmlConfiguration[location=C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml] OK.
+2020-09-11 15:07:20,272 main DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+2020-09-11 15:07:20,273 main DEBUG OutputStream closed
+2020-09-11 15:07:20,275 main DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-1, all resources released: true
+2020-09-11 15:07:20,275 main DEBUG Appender DefaultConsole-1 stopped with status true
+2020-09-11 15:07:20,277 main DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@6acdbdf5 OK
+2020-09-11 15:07:20,371 main DEBUG Registering MBean org.apache.logging.log4j2:type=42a57993
+2020-09-11 15:07:20,375 main DEBUG Registering MBean org.apache.logging.log4j2:type=42a57993,component=StatusLogger
+2020-09-11 15:07:20,377 main DEBUG Registering MBean org.apache.logging.log4j2:type=42a57993,component=ContextSelector
+2020-09-11 15:07:20,380 main DEBUG Registering MBean org.apache.logging.log4j2:type=42a57993,component=Loggers,name=
+2020-09-11 15:07:20,381 main DEBUG Registering MBean org.apache.logging.log4j2:type=42a57993,component=Appenders,name=ConsoleAppender
+2020-09-11 15:07:20,382 main DEBUG Registering MBean org.apache.logging.log4j2:type=42a57993,component=Appenders,name=FileAppender
+2020-09-11 15:07:20,384 main DEBUG org.apache.logging.log4j.core.util.SystemClock does not support precise timestamps.
+2020-09-11 15:07:20,385 main DEBUG Reconfiguration complete for context[name=42a57993] at URI C:\OneContentAPITest\RestAPITestFramework\restapitestframework\target\test-classes\log4j2.xml (org.apache.logging.log4j.core.LoggerContext@1ca3b418) with optional ClassLoader: null
+2020-09-11 15:07:20,386 main DEBUG Shutdown hook enabled. Registering a new one.
+2020-09-11 15:07:20,389 main DEBUG LoggerContext[name=42a57993, org.apache.logging.log4j.core.LoggerContext@1ca3b418] started OK.
+15:07:20.785 [main] DEBUG com.hyland.IT.tests.DynamicTestGenerator - [DeficiencyServices.yaml, PhysicianQueryServices.yaml, TaskListServices.yaml]
+15:07:27.515 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : PhysicianQueryServices.yaml : /
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.939">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:32.757 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : DeficiencyServices.yaml : /deficiencyDocInfo
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.95">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:34.699 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : PhysicianQueryServices.yaml : /getDictationJobIds/{encounter}
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.942">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:36.650 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : PhysicianQueryServices.yaml : /deficiencyDocInfo
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.932">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:167)
+</failure>
+    <system-out><![CDATA[15:07:38.595 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : DeficiencyServices.yaml : /
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.931">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:40.528 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : DeficiencyServices.yaml : /docLocking
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.935">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:42.460 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : PhysicianQueryServices.yaml : /docLocking
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.948">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:44.396 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : TaskListServices.yaml : /encounter
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.945">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:46.341 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : PhysicianQueryServices.yaml : /getDictationDocTypes/{facility}
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.927">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:48.290 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : DeficiencyServices.yaml : /getDocTypesForDefType/{facility}
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.94">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:50.219 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : DeficiencyServices.yaml : /getDictationJobIds/{encounter}
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.931">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:52.159 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : DeficiencyServices.yaml : /getDictationDocTypes/{facility}
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.922">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:54.091 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : TaskListServices.yaml : /tasklist
+]]></system-out>
+  </testcase>
+  <testcase name="restAPITest" classname="com.hyland.IT.tests.IntegrationTest" time="1.943">
+    <failure message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at com.hyland.IT.tests.IntegrationTest.restAPITest(IntegrationTest.java:170)
+</failure>
+    <system-out><![CDATA[15:07:56.014 [main] DEBUG com.hyland.IT.tests.IntegrationTest - Started : PhysicianQueryServices.yaml : /getDocTypesForDefType/{facility}
+]]></system-out>
+  </testcase>
+</testsuite>

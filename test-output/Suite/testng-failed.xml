@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.hyland.IT.tests.DynamicTestGenerator"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hyland.IT.tests.IntegrationTest">
+        <methods>
+          <include name="restAPITest"/>
+          <include name="restAPITest"/>
+          <include name="restAPITest"/>
+          <include name="restAPITest"/>
+          <include name="restAPITest"/>
+          <include name="restAPITest"/>
+          <include name="setResultTestName"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.hyland.IT.tests.IntegrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
